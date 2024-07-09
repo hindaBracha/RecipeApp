@@ -6,7 +6,6 @@ import { Container, Form } from "react-bootstrap";
 import { Addrecipe, addIngridToRecip } from "./Set";
 
 export const Aadrecip = (props) => {
-    const codeuser = props
     const Categories = useSelector(x => x.Categories);
     const recipies = useSelector(x => x.recipes);
     const levels = useSelector(x => x.Levels);
@@ -20,10 +19,9 @@ export const Aadrecip = (props) => {
     const [instrac, setInstrac] = useState();
     const [image, setImage] = useState(null);
     const [name, setName] = useState(null);
-    const [id, setId] = useState(IngredientsToRecipes[IngredientsToRecipes.length - 1].code);
-    const cuc = users.filter(u => u.mail == cuser.mail)
+    const [id] = useState(IngredientsToRecipes[IngredientsToRecipes.length - 1].code);
+    const cuc = users.filter(u => u.mail === cuser.mail)
     const dispatch = useDispatch();
-    const nav = useNavigate()
     const handleOptionChange = (option) => {
         if (selectedOptions.includes(option)) {
             setSelectedOptions(selectedOptions.filter((item) => item !== option));

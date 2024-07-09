@@ -23,7 +23,7 @@ export const Login = () => {
     const send = (event) => {
         event.preventDefault()
         let ind = check(event.target[0].value, event.target[1].value)
-        if (ind != "undefined") {
+        if (ind !== "undefined") {
             let namee = list[ind].name
             const curentuser = {
                 name: namee,

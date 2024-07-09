@@ -38,7 +38,7 @@ export default function RecipeCard(props) {
     nav(`/Sall/${id}`)
   }
 
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded] = React.useState(false);
   const handleExpandClick = () => {
   };
 

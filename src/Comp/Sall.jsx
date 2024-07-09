@@ -9,8 +9,8 @@ export const Sall = () => {
     const Ingredients = useSelector(x => x.Ingredients)
     let param = useParams()
     let id = param.id
-    const crec = recipes.find(r => r.recipid == id)
-    const ingreadids = ingread.filter(i => i.recipid == id)
+    const crec = recipes.find(r => r.recipid === id)
+    const ingreadids = ingread.filter(i => i.recipid === id)
     const filteredNames = ingreadids.map(obj => obj.Ingredid)
     let namesArray
     let filteredObjects

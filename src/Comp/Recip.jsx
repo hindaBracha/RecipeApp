@@ -10,15 +10,14 @@ export const RecipeReviewCard = () => {
   const [Sort, setSort] = React.useState([])
   let [OkLevel, setOkLevel] = React.useState(false)
   let [OkCatigory, setOkCatigory] = React.useState(false)
-  // const cCateg=listCategories.filter(x=>x.codeCateg==categorid)
 
   const Level = (e) => {
-    setSort(list.filter(a => a.level == e))
+    setSort(list.filter(a => a.level === e))
     { Sort && setOkLevel(true) }
   }
 
   const Catigory = (e) => {
-    setSort(list.filter(a => a.codeCateg == e))
+    setSort(list.filter(a => a.codeCateg === e))
     { Sort && setOkCatigory(true) }
   }
   const cancel = () => {
@@ -38,7 +37,5 @@ export const RecipeReviewCard = () => {
     {(OkCatigory || OkLevel) && Sort.map((i) => <RecipeCard dataA={i.name} dataB={i.instraction} dataC={i.level} dataD={listCategories.filter(x=>x.codeCateg==i.codeCateg)[0].name} dataE={i.recippic} dataF={i.recipid}></RecipeCard>)}
     {!OkLevel && !OkCatigory && list.map((i) => <RecipeCard dataA={i.name} dataB={i.instraction} dataC={i.level} dataD={listCategories.filter(x=>x.codeCateg==i.codeCateg)[0].name}dataE={i.recippic} dataF={i.recipid}></RecipeCard>)}
   </>
-  //   {(OkCatigory || OkLevel) && Sort.map((i) => <RecipeCard dataA={i.name} dataB={i.instraction} dataC={i.level} dataD={i.codeCateg} dataE={i.recippic} dataF={i.recipid}></RecipeCard>)}
-  //   {!OkLevel && !OkCatigory && list.map((i) => <RecipeCard dataA={i.name} dataB={i.instraction} dataC={i.level} dataD={i.codeCateg} dataE={i.recippic} dataF={i.recipid}></RecipeCard>)}
-  // </>
+  
 }

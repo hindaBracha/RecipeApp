@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import { IconButton, Tooltip } from '@mui/material';
-import { display } from '@mui/system';
 import { useSelector } from 'react-redux'
 import '../Style/Myarea.css'
 import { useNavigate } from 'react-router-dom';
@@ -13,12 +12,12 @@ export const Personalyaera = () => {
     const currntUser = useSelector(x => x.currentUser)
     const users = useSelector(x => x.users)
     const [Sort, setSort] = React.useState([])
-    const cuc = users.filter(x=>x.mail==currntUser.mail)[0].id
+    const cuc = users.filter(x=>x.mail===currntUser.mail)[0].id
 
 let nav=useNavigate()
     const Myrecipe = () => {
         debugger
-        setSort(recipes.filter(a => a.codeuser == cuc))
+        setSort(recipes.filter(a => a.codeuser === cuc))
         { Sort && setokMyrecipe(true) }
     }
    
