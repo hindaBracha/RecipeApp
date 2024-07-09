@@ -7,7 +7,7 @@ export const Home = () => {
     return <>
         <h3>  Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home </h3>
         <div className='odot'>
-            <img src={logo} height={'200px'}></img>
+            <img src={logo} height={'200px'} alt="description"></img>
             <div className='articlel'><h2>!ברוכים הבאים לפסטיבל הטעמים שלנו</h2>
 
                 <article>האתר שבפניכם הוא עולם מרתק ומגוון של מתכונים ייחודיים,
@@ -21,7 +21,7 @@ export const Home = () => {
                 </article></div>
         </div>
         <div className='weanmil'>
-            <img src={meat} height={'200px'}></img>
+            <img src={meat} height={'200px'} alt="description"></img>
             <div className='articlew'><h2>המתכון שכולם מחכים לו: סטייק ברביקיו עם טווח טעמים מטריף! 🍖</h2>
                 <article>
                     שוטף הקיץ הגיע, ועמו הזמן להצטרף לקרב הברביקיו הגדול.
@@ -34,7 +34,7 @@ export const Home = () => {
                 </article></div>
         </div>
         <div className='odot'>
-            <img src={stam} height={'200px'}></img>
+            <img src={stam} height={'200px'} alt="description"></img>
             <div className='articlel'><h2>!!תחרות קרב סכינים יוצאת לדרךךך</h2><article> קרב סכינים אינו דורש ידע כלשהו במטבח. <br />גם כאלו שלא החזיקו סכין מעולם (וגם בשלנים מנוסים) <br />מוצאים עצמם מבשלים ומכינים מנות מדהימות ומבטיחים<br /> לעצמם ש"השבוע הם יכינו את זה בבית" 😉
 
             </article></div>

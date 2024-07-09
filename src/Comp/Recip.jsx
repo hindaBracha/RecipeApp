@@ -18,7 +18,9 @@ export const RecipeReviewCard = () => {
 
   const Catigory = (e) => {
     setSort(list.filter(a => a.codeCateg === e))
-    { Sort && setOkCatigory(true) }
+    if (Sort) {
+      { Sort && setOkCatigory(true) }
+    }
   }
   const cancel = () => {
     setOkLevel(false)
@@ -34,8 +36,8 @@ export const RecipeReviewCard = () => {
       {listCategories.map((c, index) => <option key={index} value={c.codeCateg} className='option'>{c.name}</option>)}
     </select>
     <button className='cancel' onClick={() => cancel()}>✖️</button>
-    {(OkCatigory || OkLevel) && Sort.map((i) => <RecipeCard dataA={i.name} dataB={i.instraction} dataC={i.level} dataD={listCategories.filter(x=>x.codeCateg==i.codeCateg)[0].name} dataE={i.recippic} dataF={i.recipid}></RecipeCard>)}
-    {!OkLevel && !OkCatigory && list.map((i) => <RecipeCard dataA={i.name} dataB={i.instraction} dataC={i.level} dataD={listCategories.filter(x=>x.codeCateg==i.codeCateg)[0].name}dataE={i.recippic} dataF={i.recipid}></RecipeCard>)}
+    {(OkCatigory || OkLevel) && Sort.map((i) => <RecipeCard dataA={i.name} dataB={i.instraction} dataC={i.level} dataD={listCategories.filter(x => x.codeCateg === i.codeCateg)[0].name} dataE={i.recippic} dataF={i.recipid}></RecipeCard>)}
+    {!OkLevel && !OkCatigory && list.map((i) => <RecipeCard dataA={i.name} dataB={i.instraction} dataC={i.level} dataD={listCategories.filter(x => x.codeCateg === i.codeCateg)[0].name} dataE={i.recippic} dataF={i.recipid}></RecipeCard>)}
   </>
-  
+
 }

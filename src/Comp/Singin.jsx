@@ -11,7 +11,7 @@ export const Singin = () => {
 
   const check = (mail, pass) => {
     let bool = true
-    list.map((u) => { if (u.mail === mail) { alert("כתובת האימייל קיימת במערכת"); bool = false; return } })
+    list.map((u) => { if (u.mail === mail) { alert("כתובת האימייל קיימת במערכת"); bool = false; return null} })
     if (!bool) return false
     if (pass.length < 4) { alert("היי!! הסיסמא קצרה מדי !! לפחות 4 תווים"); return false }
     if (!mail.includes('@')) { alert(" ! כפרה אמייל לא תקין"); return false }

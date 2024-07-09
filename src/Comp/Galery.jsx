@@ -7,7 +7,7 @@ export const Galery = () => {
   const images=recipies.map((r)=>r.recippic)
    return <>
 <div className="wraped">
-   {images.map((i)=><img src={i}></img>)}
+   {images.map((i)=><img src={i} alt="description"></img>)}
    </div>
     </>
 }

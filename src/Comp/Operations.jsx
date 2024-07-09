@@ -7,7 +7,6 @@ import '../Style/staylregister.css'
 
 export const Operations = () => {
   const cuser=useSelector(x=>x.currentUser)
-  const users=useSelector(x=>x.users)
   const Manager=useSelector(x=>x.Manager)
    return <>
 <div className="wraped">
