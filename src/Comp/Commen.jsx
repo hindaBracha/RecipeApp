@@ -13,7 +13,8 @@ export const Commen = (prop) => {
     const dispatch = useDispatch()
     const [display, setDisplay] = useState(true)
     let Code = listCommentstorecipes[listCommentstorecipes.length - 1].code
-    const cuc = users.filter(x=>x.mail===currntUser.mail)[0].id
+    const cuc = users.filter(x=>x.mail==currntUser.mail)[0].id
+    let z = null
     const AddComment = (event) => {
         debugger
         const Commen = {
@@ -26,7 +27,7 @@ export const Commen = (prop) => {
         setDisplay(false)
     }
     return <>
-        {listCommentstorecipes.map((c)=>c.recipid===id&&<p className='Comments' key={c.Comments}><p className='nameuser'>{z=(users.filter(x=>x.id===c.codeuser))[0].name}</p>{c.Comments}</p>)}
+        {listCommentstorecipes.map((c)=>c.recipid===id&&<p className='Comments' key={c.Comments}><p className='nameuser'>{z=(users.filter(x=>x.id==c.codeuser))[0].name}</p>{c.Comments}</p>)}
        { currntUser.mail!=""&&display&& <p>הוספת תגובה</p> }
        { currntUser.mail!=""&&display&&<input placeholder={'מחכים לתגובה שלך'} onBlur={(e) => { AddComment(e) }}></input>}
     </>
