@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef60f923.css",
+    "main.js": "/static/js/main.dad42f32.js",
+    "static/js/787.dbe0c7ab.chunk.js": "/static/js/787.dbe0c7ab.chunk.js",
+    "static/media/בשרבאש.png": "/static/media/בשרבאש.e43d60c0fd60c9babdb4.png",
+    "static/media/logo192.png": "/static/media/logo192.7b8b1b50c28243592236.png",
+    "static/media/personal.png": "/static/media/personal.0d9ca0f22c999e9c34f6.png",
+    "static/media/תודה להורים- נופש (30  30 סמ).png": "/static/media/תודה להורים- נופש (30  30 סמ).96b16a8fa923f89966cf.png",
+    "static/media/Home.png": "/static/media/Home.d925d8b11e9a25a9ae99.png",
+    "static/media/logo.svg": "/static/media/logo.5152a8ef68371716318217f372e55905.svg",
+    "index.html": "/index.html",
+    "main.ef60f923.css.map": "/static/css/main.ef60f923.css.map",
+    "main.dad42f32.js.map": "/static/js/main.dad42f32.js.map",
+    "787.dbe0c7ab.chunk.js.map": "/static/js/787.dbe0c7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef60f923.css",
+    "static/js/main.dad42f32.js"
+  ]
+}
